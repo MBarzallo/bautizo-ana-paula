@@ -121,7 +121,7 @@ function InvitationPage() {
             alt=""
           />
           <img
-            src="/images/hortensia-rosada.webp"
+            src="/images/otramas.webp"
             className="hydrangea h2"
             alt=""
           />
@@ -161,7 +161,7 @@ function InvitationPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55, duration: 0.9 }}
             >
-              Bautizo de
+              Bautizo 
             </motion.h1>
 
             <motion.h2
@@ -202,26 +202,6 @@ function InvitationPage() {
               <small>10:00 · Iglesia de San Blas</small>
             </motion.div>
 
-            <motion.div
-              className="hero-actions"
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.45, duration: 0.8 }}
-            >
-              <a href="#confirmar" className="btn-primary">
-                Confirmar asistencia
-              </a>
-
-              <a
-                href={MAPS_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="btn-secondary"
-              >
-                <MapPin size={18} />
-                Ver ubicación
-              </a>
-            </motion.div>
           </div>
         </motion.div>
 
@@ -237,7 +217,7 @@ function InvitationPage() {
         </div>
 
         <div className="blessing-decor blessing-decor-right">
-          <img src="/images/hortensia-rosada.webp" alt="" />
+          <img src="/images/ortencia-azul.webp" alt="" />
         </div>
 
         <motion.div
@@ -304,7 +284,7 @@ function InvitationPage() {
         </div>
 
         <div className="details-flower details-flower-right">
-          <img src="/images/hortensia-rosada.webp" alt="" />
+          <img src="/images/ortencia-azul.webp" alt="" />
         </div>
 
         <motion.div
@@ -405,7 +385,7 @@ function InvitationPage() {
         </div>
 
         <div className="confirm-flower confirm-flower-right">
-          <img src="/images/hortensia-rosada.webp" alt="" />
+          <img src="/images/otramas.webp" alt="" />
         </div>
 
         <motion.div
@@ -634,7 +614,7 @@ function GallerySection() {
       </div>
 
       <div className="gallery-flower gallery-flower-right">
-        <img src="/images/hortensia-rosada.webp" alt="" />
+        <img src="/images/ortencia-azul.webp" alt="" />
       </div>
 
       <motion.div

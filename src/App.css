@@ -1,13 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+@font-face {
+  font-family: "Sephora Hayden";
+  src: url("/fonts/sephora-hayden.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
-  --cream: #f8efe4;
-  --cream-2: #f1dfcf;
-  --beige: #d8bda5;
-  --beige-dark: #8b6750;
-  --brown: #5b3e2e;
-  --rose: #c28a98;
-  --rose-dark: #a86979;
-  --gold: #caa76a;
-  --white-soft: rgba(255, 252, 247, 0.88);
+  --cream: #fbf8f3;
+  --cream-2: #f3eadf;
+  --beige: #d8c4ae;
+  --beige-dark: #7b5a45;
+  --brown: #5b4031;
+
+  --rose: #d8a6ae;
+  --rose-dark: #b77c88;
+
+  --blue: #9ebbd6;
+  --blue-dark: #6f91b4;
+  --blue-soft: #e7f0f8;
+
+  --gold: #c9aa6b;
+  --white-soft: rgba(255, 252, 247, 0.9);
 }
 
 .baptism-page {
@@ -169,7 +184,7 @@
   margin: 18px auto 0;
   text-align: center;
   color: #856451;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.75;
 }
 
@@ -825,7 +840,7 @@
   width: min(100%, 390px);
   margin: 18px auto 0;
   color: #775541;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.75;
 }
 
@@ -1193,7 +1208,7 @@
   }
 
   .hero-phrase {
-    font-size: 15px;
+    font-size: 300px;
   }
 
   .h1 {
@@ -1542,7 +1557,7 @@
 }
 
 .event-box::after {
-  content: "✝";
+  content: "";
   position: absolute;
   right: 22px;
   bottom: 4px;
@@ -2657,5 +2672,1119 @@
 
   .admin-stats strong {
     font-size: 32px;
+  }
+}
+
+/* Quitar emojis raros en móvil/iPhone */
+.event-box::after,
+.reception-box::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 0px;
+  width: 86px;
+  height: 86px;
+  opacity: 0.08;
+  background: none;
+  pointer-events: none;
+}
+
+/* Cruz hecha con CSS, no emoji */
+.ceremony-box::after {
+  content: "";
+  width: 72px;
+  height: 72px;
+  background:
+    linear-gradient(#b27685, #b27685) center / 16px 72px no-repeat,
+    linear-gradient(#b27685, #b27685) center / 72px 16px no-repeat;
+  border-radius: 12px;
+}
+
+/* Corazón mejor lo quitamos para que no salga emoji */
+.reception-box::after {
+  display: none;
+}
+@media (max-width: 560px) {
+  .event-box {
+    min-height: auto;
+    padding: 24px 20px;
+  }
+
+  .event-box h3 {
+    font-size: 34px;
+    line-height: 1.05;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .event-box p {
+    font-size: 16px;
+  }
+
+  .ceremony-box::after {
+    width: 54px;
+    height: 54px;
+    right: 20px;
+    bottom: 20px;
+    background:
+      linear-gradient(#b27685, #b27685) center / 11px 54px no-repeat,
+      linear-gradient(#b27685, #b27685) center / 54px 11px no-repeat;
+  }
+}@media (max-width: 560px) {
+  .details-section {
+    padding-top: 105px;
+  }
+}
+
+
+.baptism-page {
+  min-height: 100vh;
+  position: relative;
+  color: var(--brown);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(158, 187, 214, 0.28), transparent 28%),
+    radial-gradient(circle at 92% 18%, rgba(255, 255, 255, 0.9), transparent 26%),
+    radial-gradient(circle at 50% 100%, rgba(216, 196, 174, 0.32), transparent 36%),
+    linear-gradient(180deg, #fffdfa 0%, #f7efe7 45%, #ead9c9 100%);
+}
+
+.section-heading span,
+.mini-label,
+.confirm-small-title,
+.event-box span,
+.confirm-form-premium label span,
+.event-date-banner small,
+.godparents-card small {
+  color: #8aa8c6;
+}
+
+.hero-name {
+  color: #b98791;
+}
+
+.hero-cross,
+.blessing-cross-center,
+.event-icon,
+.detail-icon,
+.godparents-icon,
+.admin-login-icon {
+  color: #6f91b4;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.96), transparent 38%),
+    linear-gradient(135deg, #e7f0f8, #f3e5dc);
+}
+
+.location-card-premium,
+.location-card {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.28), transparent 35%),
+    linear-gradient(135deg, #8a6a54, #c9aa6b);
+}
+/* ======================================================
+   PALETA FINAL: BLANCO + DORADO + CELESTE HORTENSIA
+   ====================================================== */
+
+:root {
+  --white-main: #fffdf8;
+  --white-soft: rgba(255, 252, 247, 0.92);
+  --cream-light: #fbf7ef;
+  --cream-warm: #f4eadc;
+
+  --gold: #c8a96a;
+  --gold-soft: #e5d4aa;
+  --gold-dark: #9a7a3f;
+
+  --blue: #9ebbd6;
+  --blue-soft: #e8f1f8;
+  --blue-dark: #6f91b4;
+
+  --brown: #5b4031;
+  --brown-soft: #7d604c;
+}
+
+/* Fondo general más blanco y fino */
+.baptism-page {
+  color: var(--brown);
+  background:
+    radial-gradient(circle at 12% 12%, rgba(158, 187, 214, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(229, 212, 170, 0.18), transparent 28%),
+    radial-gradient(circle at 50% 95%, rgba(158, 187, 214, 0.14), transparent 35%),
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 48%, #f3eadf 100%) !important;
+}
+
+/* Cuadricula más suave, casi invisible */
+.baptism-page::before,
+.hero-section::before {
+  opacity: 0.08 !important;
+  background-image:
+    linear-gradient(rgba(154, 122, 63, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(154, 122, 63, 0.14) 1px, transparent 1px) !important;
+}
+
+/* Navbar más blanco/dorado */
+.top-nav {
+  background: rgba(255, 253, 248, 0.86) !important;
+  border: 1px solid rgba(200, 169, 106, 0.28) !important;
+  box-shadow: 0 18px 45px rgba(91, 64, 49, 0.08) !important;
+}
+
+.top-nav a {
+  color: #7c6044 !important;
+}
+
+.top-nav a:hover {
+  background: rgba(158, 187, 214, 0.15) !important;
+  color: var(--blue-dark) !important;
+}
+
+/* Hero más blanco */
+.hero-section {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(158, 187, 214, 0.16), transparent 30%),
+    radial-gradient(circle at 82% 18%, rgba(229, 212, 170, 0.16), transparent 28%),
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 100%) !important;
+}
+
+.hero-glass {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(251, 247, 239, 0.9)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.32) !important;
+  box-shadow:
+    0 28px 75px rgba(91, 64, 49, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.65) !important;
+}
+
+.hero-glass::after {
+  border: 1px solid rgba(200, 169, 106, 0.28) !important;
+}
+
+/* Etiquetas celestes */
+.mini-label,
+.section-heading span,
+.confirm-small-title,
+.event-box span,
+.confirm-form-premium label span,
+.event-date-banner small,
+.godparents-card small,
+.admin-login-card span,
+.admin-header span {
+  color: var(--blue-dark) !important;
+}
+
+/* Títulos principales */
+.hero-title,
+.section-heading h2,
+.details-card-premium h2,
+.confirm-info-panel h2,
+.admin-header h1,
+.admin-login-card h1 {
+  color: #6d513d !important;
+}
+
+/* Nombre menos rosado, más elegante */
+.hero-name {
+  color: #8fb0cf !important;
+  text-shadow: 0 10px 28px rgba(111, 145, 180, 0.2) !important;
+}
+
+/* Texto general */
+.hero-phrase,
+.section-heading p,
+.details-heading p,
+.confirm-info-panel p,
+.event-box p,
+.detail-item p {
+  color: #725844 !important;
+}
+
+/* Círculos de iconos celestes/dorados */
+.hero-cross,
+.blessing-cross-center,
+.event-icon,
+.detail-icon,
+.godparents-icon,
+.confirm-icon,
+.confirm-seal,
+.admin-login-icon {
+  color: var(--blue-dark) !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.95), transparent 38%),
+    linear-gradient(135deg, var(--blue-soft), #f6ead8) !important;
+  box-shadow: 0 16px 34px rgba(111, 145, 180, 0.16) !important;
+}
+
+/* Botón principal celeste */
+.btn-primary,
+.confirm-form-premium button,
+.admin-login-card button,
+.admin-actions button {
+  color: white !important;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.3), transparent 35%),
+    linear-gradient(135deg, #9ebbd6, #6f91b4) !important;
+  box-shadow: 0 18px 36px rgba(111, 145, 180, 0.26) !important;
+}
+
+/* Botón secundario blanco/dorado */
+.btn-secondary {
+  color: #7a6044 !important;
+  background: rgba(255, 253, 248, 0.86) !important;
+  border: 1px solid rgba(200, 169, 106, 0.38) !important;
+  box-shadow: 0 12px 28px rgba(91, 64, 49, 0.08) !important;
+}
+
+/* Fecha tipo píldora blanca/dorada */
+.hero-date-pill,
+.event-date-banner {
+  background: rgba(255, 253, 248, 0.88) !important;
+  border: 1px solid rgba(200, 169, 106, 0.35) !important;
+  color: #6d513d !important;
+  box-shadow: 0 12px 28px rgba(91, 64, 49, 0.07) !important;
+}
+
+.hero-date-pill small,
+.event-date-banner small {
+  color: var(--blue-dark) !important;
+}
+
+/* Tarjetas blancas */
+.blessing-card,
+.details-card-premium,
+.confirm-wrapper,
+.admin-dashboard,
+.admin-login-card,
+.form-card,
+.confirm-card {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.94), rgba(251, 247, 239, 0.86)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.26) !important;
+  box-shadow:
+    0 30px 85px rgba(91, 64, 49, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Tarjetas de ceremonia/recepción más blancas */
+.event-box,
+.detail-item,
+.godparents-card,
+.blessing-message,
+.admin-stats div {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.92), rgba(250, 246, 238, 0.82)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.26) !important;
+  box-shadow: 0 22px 54px rgba(91, 64, 49, 0.08) !important;
+}
+
+.event-box h3,
+.blessing-card h3 {
+  color: #6d513d !important;
+}
+
+/* Ubicación dorada */
+.location-card,
+.location-card-premium {
+  color: white !important;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.28), transparent 35%),
+    linear-gradient(135deg, #c8a96a, #9a7a3f) !important;
+  box-shadow: 0 22px 48px rgba(154, 122, 63, 0.22) !important;
+}
+
+/* Panel de confirmación: azul/dorado, ya no rosado */
+.confirm-info-panel {
+  background:
+    radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.35), transparent 34%),
+    linear-gradient(160deg, #9ebbd6, #6f91b4) !important;
+}
+
+.confirm-info-panel::before {
+  color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.confirm-mini-details div {
+  background: rgba(255, 255, 255, 0.16) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+}
+
+/* Inputs más limpios */
+.confirm-form-premium input,
+.confirm-form-premium select,
+.confirm-form-premium textarea,
+.admin-login-card input {
+  background: rgba(255, 253, 248, 0.92) !important;
+  border: 1px solid rgba(200, 169, 106, 0.34) !important;
+  color: #5b4031 !important;
+}
+
+.confirm-form-premium input:focus,
+.confirm-form-premium select:focus,
+.confirm-form-premium textarea:focus,
+.admin-login-card input:focus {
+  border-color: var(--blue-dark) !important;
+  box-shadow: 0 0 0 4px rgba(158, 187, 214, 0.22) !important;
+}
+
+/* Flores: menos saturadas, más acuarela */
+.hydrangea,
+.blessing-decor,
+.details-flower,
+.gallery-flower,
+.confirm-flower {
+  opacity: 0.42 !important;
+  filter:
+    saturate(0.82)
+    brightness(1.08)
+    drop-shadow(0 20px 35px rgba(91, 64, 49, 0.08)) !important;
+}
+
+/* Elimina la hortensia rosada del hero visualmente */
+.h2 {
+  opacity: 0.18 !important;
+  filter:
+    grayscale(0.35)
+    saturate(0.5)
+    brightness(1.15)
+    drop-shadow(0 20px 35px rgba(91, 64, 49, 0.06)) !important;
+}
+
+/* Mejor usar azul en la esquina derecha también */
+.h4 {
+  opacity: 0.38 !important;
+}
+
+/* Galería más tipo álbum blanco */
+.bento-photo,
+.gallery-item {
+  background: rgba(255, 253, 248, 0.88) !important;
+  border-color: rgba(255, 253, 248, 0.95) !important;
+  box-shadow: 0 24px 56px rgba(91, 64, 49, 0.11) !important;
+}
+
+/* Scroll indicator dorado */
+.scroll-indicator {
+  color: #9a7a3f !important;
+}
+
+.scroll-indicator span {
+  border-color: rgba(154, 122, 63, 0.5) !important;
+}
+
+.scroll-indicator span::before {
+  background: #9a7a3f !important;
+}
+
+/* ======================================================
+   BENDICIÓN FINAL - BLANCO, DORADO Y CELESTE
+   ====================================================== */
+
+.blessing-section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(158, 187, 214, 0.13), transparent 30%),
+    radial-gradient(circle at 88% 72%, rgba(200, 169, 106, 0.1), transparent 34%),
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 100%) !important;
+}
+
+.blessing-section::before {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(158, 187, 214, 0.13), transparent 28%),
+    radial-gradient(circle at 82% 72%, rgba(200, 169, 106, 0.1), transparent 30%) !important;
+}
+
+.blessing-heading span {
+  color: #6f91b4 !important;
+}
+
+.blessing-heading h2 {
+  color: #6d513d !important;
+}
+
+.blessing-heading p {
+  color: #725844 !important;
+}
+
+.blessing-cross-center {
+  color: #6f91b4 !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.95), transparent 38%),
+    linear-gradient(135deg, #e8f1f8, #f6ead8) !important;
+  box-shadow: 0 18px 40px rgba(111, 145, 180, 0.18) !important;
+}
+
+.blessing-message {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(251, 247, 239, 0.9)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.32) !important;
+  box-shadow: 0 22px 60px rgba(91, 64, 49, 0.08) !important;
+}
+
+.blessing-message p {
+  color: #6d513d !important;
+}
+
+.blessing-grid-premium .blessing-card {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(251, 247, 239, 0.88)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.28) !important;
+  box-shadow:
+    0 26px 65px rgba(91, 64, 49, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55) !important;
+}
+
+.blessing-grid-premium .blessing-card:hover {
+  box-shadow:
+    0 34px 75px rgba(91, 64, 49, 0.14),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.65) !important;
+}
+
+.blessing-grid-premium .blessing-card::before {
+  background: rgba(158, 187, 214, 0.16) !important;
+}
+
+.blessing-grid-premium .blessing-card::after {
+  color: rgba(200, 169, 106, 0.11) !important;
+}
+
+.blessing-grid-premium .blessing-card div {
+  color: #6f91b4 !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.96), transparent 38%),
+    linear-gradient(135deg, #e8f1f8, #f6ead8) !important;
+  box-shadow: 0 16px 34px rgba(111, 145, 180, 0.16) !important;
+}
+
+.blessing-grid-premium .blessing-card h3 {
+  color: #6d513d !important;
+}
+
+.blessing-grid-premium .blessing-card p {
+  color: #725844 !important;
+}
+
+/* Flores de bendición más tipo acuarela */
+.blessing-decor {
+  opacity: 0.32 !important;
+  filter:
+    saturate(0.72)
+    brightness(1.12)
+    drop-shadow(0 20px 35px rgba(91, 64, 49, 0.07)) !important;
+}
+
+.blessing-decor-right {
+  opacity: 0.24 !important;
+}
+
+/* ======================================================
+   DETALLES FINAL - BLANCO, DORADO Y CELESTE
+   ====================================================== */
+
+.details-section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(158, 187, 214, 0.12), transparent 30%),
+    radial-gradient(circle at 86% 78%, rgba(200, 169, 106, 0.1), transparent 34%),
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 100%) !important;
+}
+
+.details-section::before {
+  background:
+    radial-gradient(circle at 18% 15%, rgba(158, 187, 214, 0.12), transparent 30%),
+    radial-gradient(circle at 82% 80%, rgba(200, 169, 106, 0.1), transparent 32%) !important;
+}
+
+.details-card-premium {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(251, 247, 239, 0.9)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.3) !important;
+  box-shadow:
+    0 32px 90px rgba(91, 64, 49, 0.11),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.62) !important;
+}
+
+.details-card-premium::before {
+  border: 1px solid rgba(200, 169, 106, 0.24) !important;
+}
+
+.details-heading span {
+  color: #6f91b4 !important;
+}
+
+.details-heading h2 {
+  color: #6d513d !important;
+}
+
+.details-heading p {
+  color: #725844 !important;
+}
+
+/* Fecha */
+.event-date-banner {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(251, 247, 239, 0.88)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.32) !important;
+  box-shadow: 0 14px 34px rgba(91, 64, 49, 0.07) !important;
+}
+
+.event-date-banner svg {
+  color: #6f91b4 !important;
+}
+
+.event-date-banner small {
+  color: #6f91b4 !important;
+}
+
+.event-date-banner strong {
+  color: #6d513d !important;
+}
+
+/* Ceremonia / Recepción */
+.event-box {
+  background:
+    radial-gradient(circle at top right, rgba(232, 241, 248, 0.7), transparent 36%),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.95), rgba(251, 247, 239, 0.86)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.28) !important;
+  box-shadow: 0 22px 54px rgba(91, 64, 49, 0.08) !important;
+}
+
+.event-box::before {
+  background: rgba(158, 187, 214, 0.14) !important;
+}
+
+.event-box::after,
+.reception-box::after,
+.ceremony-box::after {
+  display: none !important;
+  content: "" !important;
+}
+
+.event-icon {
+  color: #6f91b4 !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.96), transparent 40%),
+    linear-gradient(135deg, #e8f1f8, #f6ead8) !important;
+  box-shadow: 0 16px 34px rgba(111, 145, 180, 0.16) !important;
+}
+
+.event-box span {
+  color: #6f91b4 !important;
+}
+
+.event-box h3 {
+  color: #6d513d !important;
+}
+
+.event-box p {
+  color: #725844 !important;
+}
+
+/* Madrina */
+.godparents-card {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.95), rgba(251, 247, 239, 0.86)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.28) !important;
+  box-shadow: 0 18px 44px rgba(91, 64, 49, 0.07) !important;
+}
+
+.godparents-icon {
+  color: #6f91b4 !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.96), transparent 40%),
+    linear-gradient(135deg, #e8f1f8, #f6ead8) !important;
+}
+
+.godparents-card small {
+  color: #6f91b4 !important;
+}
+
+.godparents-card strong {
+  color: #6d513d !important;
+}
+
+/* Botón ubicación dorado elegante */
+.location-card-premium {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.28), transparent 35%),
+    linear-gradient(135deg, #c8a96a, #9a7a3f) !important;
+  box-shadow: 0 22px 48px rgba(154, 122, 63, 0.22) !important;
+}
+
+.location-icon {
+  background: rgba(255, 255, 255, 0.18) !important;
+}
+
+.location-card-premium strong,
+.location-card-premium p {
+  color: white !important;
+}
+
+/* Flores laterales */
+.details-flower {
+  opacity: 0.28 !important;
+  filter:
+    saturate(0.7)
+    brightness(1.14)
+    drop-shadow(0 20px 35px rgba(91, 64, 49, 0.07)) !important;
+}
+
+.details-flower-right {
+  opacity: 0.22 !important;
+}
+
+/* Responsive para que en móvil no se vea apretado */
+@media (max-width: 760px) {
+  .details-card-premium {
+    padding: 30px 18px !important;
+  }
+
+  .event-columns {
+    grid-template-columns: 1fr !important;
+  }
+
+  .event-box h3 {
+    font-size: 30px !important;
+    line-height: 1.08 !important;
+  }
+
+  .event-date-banner {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+}
+
+/* ======================================================
+   CONFIRMACIÓN FINAL - MÁS ELEGANTE
+   ====================================================== */
+
+.confirm-premium-section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(158, 187, 214, 0.12), transparent 30%),
+    radial-gradient(circle at 84% 76%, rgba(200, 169, 106, 0.1), transparent 32%),
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 100%) !important;
+}
+
+.confirm-premium-section::before {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(158, 187, 214, 0.12), transparent 30%),
+    radial-gradient(circle at 84% 76%, rgba(200, 169, 106, 0.1), transparent 32%) !important;
+}
+
+/* contenedor general */
+.confirm-wrapper {
+  width: min(100%, 960px) !important;
+  border-radius: 42px !important;
+  overflow: hidden !important;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(251, 247, 239, 0.9)) !important;
+  border: 1px solid rgba(200, 169, 106, 0.28) !important;
+  box-shadow:
+    0 30px 85px rgba(91, 64, 49, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55) !important;
+  grid-template-columns: 0.9fr 1.1fr !important;
+}
+
+/* panel izquierdo */
+.confirm-info-panel {
+  padding: 42px 34px !important;
+  min-height: 580px !important;
+  background:
+    radial-gradient(circle at 15% 12%, rgba(255, 255, 255, 0.28), transparent 34%),
+    linear-gradient(160deg, #b8cfe4, #8fb0cf) !important;
+  color: #5f4636 !important;
+}
+
+.confirm-info-panel::before {
+  content: "" !important;
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.12;
+  background:
+    linear-gradient(#ffffff, #ffffff) center / 18px 120px no-repeat,
+    linear-gradient(#ffffff, #ffffff) center / 120px 18px no-repeat;
+  border-radius: 18px;
+}
+
+.confirm-info-panel::after {
+  inset: 16px !important;
+  border-radius: 30px !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+}
+
+.confirm-seal {
+  width: 68px !important;
+  height: 68px !important;
+  color: #6f91b4 !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.96), transparent 40%),
+    linear-gradient(135deg, #fffdf8, #f3eadf) !important;
+  box-shadow: 0 16px 34px rgba(111, 145, 180, 0.15) !important;
+}
+
+.confirm-small-title {
+  margin-top: 26px !important;
+  color: #6f91b4 !important;
+}
+
+.confirm-info-panel h2 {
+  margin-top: 16px !important;
+  max-width: 320px !important;
+  font-size: clamp(34px, 5vw, 56px) !important;
+  line-height: 0.98 !important;
+  color: #6d513d !important;
+}
+
+.confirm-info-panel p {
+  max-width: 340px !important;
+  color: #6f5847 !important;
+  font-size: 16px !important;
+  line-height: 1.72 !important;
+}
+
+.confirm-mini-details {
+  margin-top: 28px !important;
+  gap: 12px !important;
+}
+
+.confirm-mini-details div {
+  padding: 14px 16px !important;
+  border-radius: 999px !important;
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.16) !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  backdrop-filter: blur(10px);
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.confirm-mini-details svg {
+  color: #fff !important;
+}
+
+/* formulario derecho */
+.confirm-form-premium {
+  padding: 42px 34px !important;
+  gap: 16px !important;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.97), rgba(251, 247, 239, 0.92)) !important;
+}
+
+.confirm-form-premium label span {
+  color: #6f91b4 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.16em !important;
+}
+
+.confirm-form-premium input,
+.confirm-form-premium select,
+.confirm-form-premium textarea {
+  border: 1px solid rgba(200, 169, 106, 0.28) !important;
+  background: rgba(255, 253, 248, 0.95) !important;
+  color: #5b4031 !important;
+  border-radius: 20px !important;
+  padding: 15px 18px !important;
+  box-shadow: none !important;
+}
+
+.confirm-form-premium input::placeholder,
+.confirm-form-premium textarea::placeholder {
+  color: #b39c8b !important;
+}
+
+.confirm-form-premium input:focus,
+.confirm-form-premium select:focus,
+.confirm-form-premium textarea:focus {
+  border-color: #8fb0cf !important;
+  box-shadow: 0 0 0 4px rgba(143, 176, 207, 0.16) !important;
+  background: #fffdf8 !important;
+}
+
+.form-row.two-columns {
+  grid-template-columns: 1.25fr 0.75fr !important;
+  gap: 14px !important;
+}
+
+/* botón */
+.confirm-form-premium button {
+  min-height: 54px !important;
+  margin-top: 4px !important;
+  border-radius: 999px !important;
+  color: white !important;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.28), transparent 35%),
+    linear-gradient(135deg, #a6c1db, #6f91b4) !important;
+  box-shadow: 0 18px 34px rgba(111, 145, 180, 0.24) !important;
+}
+
+.confirm-form-premium button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 22px 40px rgba(111, 145, 180, 0.28) !important;
+}
+
+/* mensaje inferior */
+.form-note,
+.submit-message {
+  text-align: center !important;
+  color: #9a7a3f !important;
+  font-size: 13px !important;
+}
+
+/* flores laterales */
+.confirm-flower {
+  opacity: 0.28 !important;
+  filter:
+    saturate(0.72)
+    brightness(1.12)
+    drop-shadow(0 20px 35px rgba(91, 64, 49, 0.07)) !important;
+}
+
+.confirm-flower-right {
+  opacity: 0.22 !important;
+}
+
+/* footer más delicado */
+.site-footer,
+.footer,
+.page-footer {
+  color: #8a6a54 !important;
+  text-align: center;
+}
+
+.site-footer p,
+.footer p,
+.page-footer p {
+  color: #8a6a54 !important;
+  font-size: 14px !important;
+}
+
+.site-footer small,
+.footer small,
+.page-footer small {
+  color: #a5866f !important;
+}
+
+/* responsive */
+@media (max-width: 860px) {
+  .confirm-wrapper {
+    grid-template-columns: 1fr !important;
+    border-radius: 34px !important;
+  }
+
+  .confirm-info-panel {
+    min-height: auto !important;
+    padding: 34px 24px !important;
+  }
+
+  .confirm-form-premium {
+    padding: 30px 22px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .confirm-info-panel h2 {
+    font-size: 40px !important;
+  }
+
+  .form-row.two-columns {
+    grid-template-columns: 1fr !important;
+  }
+
+  .confirm-mini-details div {
+    border-radius: 22px !important;
+    align-items: flex-start !important;
+  }
+
+  .confirm-form-premium input,
+  .confirm-form-premium select,
+  .confirm-form-premium textarea {
+    border-radius: 18px !important;
+  }
+}
+/* ================= AJUSTE TEXTO HERO - MÁS GRANDE Y CURSIVO ================= */
+
+.hero-title {
+  font-style: italic !important;
+  font-size: clamp(48px, 12vw, 76px) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.hero-name {
+  font-style: italic !important;
+  font-size: clamp(76px, 18vw, 118px) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.04em !important;
+}
+
+.hero-phrase {
+  font-style: italic !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: clamp(18px, 4.2vw, 25px) !important;
+  line-height: 1.65 !important;
+  color: #6d513d !important;
+}
+
+.hero-date-pill {
+  padding: 18px 22px !important;
+}
+
+.hero-date-pill span {
+  font-size: clamp(20px, 4.8vw, 28px) !important;
+  font-style: italic !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-weight: 700 !important;
+}
+
+.hero-date-pill small {
+  display: none !important;
+}
+
+/* Si quitaste los botones, esto ayuda a que no quede tanto espacio abajo */
+.hero-actions {
+  margin-top: 22px !important;
+}
+
+/* Móvil */
+@media (max-width: 560px) {
+  .hero-title {
+    font-size: 48px !important;
+  }
+
+  .hero-name {
+    font-size: 78px !important;
+  }
+
+  .hero-phrase {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+  }
+
+  .hero-date-pill span {
+    font-size: 23px !important;
+  }
+}
+
+/* ================= FUENTE HERO ELEGANTE ================= */
+
+.hero-title {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-style: italic !important;
+  font-size: clamp(50px, 11vw, 76px) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* móvil */
+@media (max-width: 560px) {
+  .hero-title {
+    font-size: 50px !important;
+  }
+
+  .hero-name {
+    font-size: 82px !important;
+  }
+
+  .hero-phrase {
+    font-size: 21px !important;
+  }
+
+  .hero-date-pill span {
+    font-size: 26px !important;
+  }
+}
+
+.hero-title,
+.hero-name {
+  font-family: "Sephora Hayden", "Cormorant Garamond", Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.hero-title {
+  font-size: clamp(56px, 12vw, 90px) !important;
+  line-height: 0.95 !important;
+}
+
+.hero-name {
+  font-size: clamp(82px, 18vw, 130px) !important;
+  line-height: 0.9 !important;
+}
+@media (max-width: 560px) {
+  .hero-title {
+    font-size: 58px !important;
+  }
+
+  .hero-name {
+    font-size: 88px !important;
+  }
+}
+/* ================= FUENTE DECORATIVA EN TÍTULOS ================= */
+
+.hero-title,
+.hero-name,
+.section-heading h2,
+.details-heading h2,
+.confirm-info-panel h2,
+.admin-header h1,
+.admin-login-card h1 {
+  font-family: "Sephora Hayden", "Cormorant Garamond", Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Ajustes para que no se exageren fuera del hero */
+.section-heading h2,
+.details-heading h2 {
+  font-size: clamp(46px, 8vw, 76px) !important;
+  line-height: 0.95 !important;
+}
+
+.confirm-info-panel h2 {
+  font-size: clamp(42px, 5.5vw, 68px) !important;
+  line-height: 0.95 !important;
+}
+
+.admin-header h1,
+.admin-login-card h1 {
+  font-size: clamp(42px, 6vw, 68px) !important;
+  line-height: 0.95 !important;
+}
+
+/* Mantener el hero más protagonista */
+.hero-title {
+  font-size: clamp(56px, 12vw, 90px) !important;
+  line-height: 0.95 !important;
+}
+
+.hero-name {
+  font-size: clamp(82px, 18vw, 130px) !important;
+  line-height: 0.9 !important;
+}
+
+/* Móvil */
+@media (max-width: 560px) {
+  .section-heading h2,
+  .details-heading h2 {
+    font-size: 52px !important;
+    line-height: 0.95 !important;
+  }
+
+  .confirm-info-panel h2 {
+    font-size: 48px !important;
+  }
+
+  .admin-header h1,
+  .admin-login-card h1 {
+    font-size: 46px !important;
+  }
+
+  .hero-title {
+    font-size: 58px !important;
+  }
+
+  .hero-name {
+    font-size: 88px !important;
   }
 }
