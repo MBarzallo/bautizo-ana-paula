@@ -254,16 +254,7 @@ function InvitationPage() {
           </p>
         </motion.div>
 
-        <div className="blessing-grid blessing-grid-premium">
-          
-          <BlessingCard
-            delay={0.2}
-            icon={<Heart />}
-            title="Amor familiar"
-            text="Celebramos este día rodeados de cariño, unión y alegría junto a quienes más la aman."
-          />
-
-        </div>
+       
       </Section>
 
       <Section id="detalles" className="details-section">
