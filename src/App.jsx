@@ -328,7 +328,7 @@ function InvitationPage() {
               </div>
 
               <span>Recepción</span>
-              <h3>La pérgola</h3>
+              <h3>La Pérgola</h3>
               <p>12:00 del mediodía</p>
             </motion.article>
           </div>
