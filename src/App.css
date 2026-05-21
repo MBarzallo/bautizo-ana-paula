@@ -1345,7 +1345,7 @@
 }
 
 .blessing-grid-premium .blessing-card::after {
-  content: "✝";
+  content: "";
   position: absolute;
   right: 24px;
   bottom: 14px;
@@ -2099,7 +2099,7 @@
 }
 
 .confirm-info-panel::before {
-  content: "✝";
+  content: "";
   position: absolute;
   right: -18px;
   bottom: -34px;
@@ -3787,4 +3787,33 @@
   .hero-name {
     font-size: 88px !important;
   }
+}
+
+/* ================= ELIMINAR EMOJIS DE CRUZ EN BENDICIÓN ================= */
+
+.blessing-card::after,
+.blessing-grid-premium .blessing-card::after,
+.blessing-grid .blessing-card::after {
+  content: "" !important;
+  display: none !important;
+  background: none !important;
+}
+
+/* Por si Safari/iPhone mantiene algo raro */
+.blessing-card {
+  overflow: hidden !important;
+}
+
+/* Decoración elegante sin emoji */
+.blessing-card::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 150px !important;
+  height: 150px !important;
+  right: -60px !important;
+  top: -60px !important;
+  border-radius: 999px !important;
+  background:
+    radial-gradient(circle, rgba(158, 187, 214, 0.18), transparent 68%) !important;
+  display: block !important;
 }
