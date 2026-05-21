@@ -255,13 +255,7 @@ function InvitationPage() {
         </motion.div>
 
         <div className="blessing-grid blessing-grid-premium">
-          <BlessingCard
-            delay={0.05}
-            icon={<Cross />}
-            title="Bendición"
-            text="Un momento sagrado para recibir la gracia de Dios y comenzar un camino lleno de luz."
-          />
-
+          
           <BlessingCard
             delay={0.2}
             icon={<Heart />}
@@ -269,12 +263,6 @@ function InvitationPage() {
             text="Celebramos este día rodeados de cariño, unión y alegría junto a quienes más la aman."
           />
 
-          <BlessingCard
-            delay={0.35}
-            icon={<Sparkles />}
-            title="Esperanza"
-            text="Una nueva etapa para Ana Paula, llena de protección, fe y hermosos momentos."
-          />
         </div>
       </Section>
 
@@ -295,7 +283,7 @@ function InvitationPage() {
           transition={{ duration: 0.8 }}
         >
           <div className="section-heading compact details-heading">
-            <span>Detalles del evento</span>
+            <span>Detalles de este día</span>
             <h2>Te esperamos</h2>
             <p>
               Será un día muy especial para acompañar a Ana Paula en su bautizo
