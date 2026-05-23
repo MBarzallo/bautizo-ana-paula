@@ -331,7 +331,7 @@ function InvitationPage() {
 
             <div>
               <small>Madrina</small>
-              <strong>Rocío</strong>
+              <strong>Chio Papitas</strong>
             </div>
           </div>
 
