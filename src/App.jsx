@@ -199,7 +199,7 @@ function InvitationPage() {
               transition={{ delay: 1.3, duration: 0.8 }}
             >
               <span>Sábado 20 de junio</span>
-              <small>10:00 · Iglesia de San Blas</small>
+              <small>11:00 · Capilla Corazón De Jesús - La Merced</small>
             </motion.div>
 
           </div>
@@ -303,8 +303,9 @@ function InvitationPage() {
               </div>
 
               <span>Ceremonia</span>
-              <h3>Iglesia de San Blas</h3>
-              <p>10:00 de la mañana</p>
+              <h3>Capilla Corazón De Jesús - La Merced</h3>
+              <p>11:00 de la mañana</p>
+              <p style={{ fontSize: "14px", marginTop: "8px", color: "#80604d", opacity: 0.85 }}>Honorato Vásquez y Luis Cordero</p>
             </motion.article>
 
             <motion.article
